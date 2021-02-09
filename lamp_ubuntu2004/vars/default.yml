@@ -1,5 +1,5 @@
 ---
-mysql_root_password: "password"
+mysql_root_password: "mysql_root_password"
 app_user: "user"
 http_host: "localhost"
 http_conf: "localhost.conf"

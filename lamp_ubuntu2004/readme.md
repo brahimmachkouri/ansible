@@ -19,7 +19,7 @@ Quickstart guide for those already familiar with Ansible:
 ### 1. Obtain the playbook
 ```shell
 git clone https://github.com/brahimmachkouri/ansible.git
-cd ansible/lamp_ubuntu1804
+cd ansible/lamp_ubuntu2004
 ```
 
 ### 2. Customize Options

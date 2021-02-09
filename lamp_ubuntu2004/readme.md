@@ -1,6 +1,6 @@
-# LAMP on Ubuntu 18.04
+# LAMP on Ubuntu 20.04
 
-This playbook will install a LAMP environment (**L**inux, **A**pache, **M**ySQL and **P**HP) on an Ubuntu 18.04 machine, as explained in the guide on [How to Use Ansible to Install and Configure LAMP on Ubuntu 18.04](#). A virtualhost will be created with the options specified in the `vars/default.yml` variable file.
+This playbook will install a LAMP environment (**L**inux, **A**pache, **M**ySQL and **P**HP) on an Ubuntu 20.04 machine, as explained in the guide on [How to Use Ansible to Install and Configure LAMP on Ubuntu 20.04](#). A virtualhost will be created with the options specified in the `vars/default.yml` variable file.
 
 ## Settings
 
@@ -30,8 +30,8 @@ nano vars/default.yml
 
 ```yml
 ---
-mysql_root_password: "mysql_root_password"
-app_user: "sammy"
+mysql_root_password: "password"
+app_user: "user"
 http_host: "your_domain"
 http_conf: "your_domain.conf"
 http_port: "80"

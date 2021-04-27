@@ -31,7 +31,7 @@ nano vars/default.yml
 ```yml
 ---
 mysql_root_password: "password"
-app_user: "user"
+app_user: "www-data"
 http_host: "your_domain"
 http_conf: "your_domain.conf"
 http_port: "80"
@@ -44,4 +44,16 @@ disable_default: true
 ansible-playbook -l [target] -i [inventory file] -u [remote user] playbook.yml
 ```
 
-For more information on how to run this Ansible setup, please check this guide: [soon]().
+To run this playbook on localhost, add the following in /etc/ansible/hosts :
+```yml
+localhost ansible_connection=local
+```
+And in the default.yml file, replace "user" by "www-data" and "your_domain" occurences by "localhost" :
+```command
+sed -i 's/user/www-data/g' lamp_ubuntu2004/vars/default.yml
+sed -i 's/your_domain/localhost/g' lamp_ubuntu2004/vars/default.yml
+```
+Then run the playbook :
+```command
+ansible-playbook playbook.yml
+```

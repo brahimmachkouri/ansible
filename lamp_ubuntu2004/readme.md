@@ -50,7 +50,6 @@ localhost ansible_connection=local
 ```
 And in the default.yml file, replace "user" by "www-data" and "your_domain" occurences by "localhost" :
 ```command
-sed -i 's/user/www-data/g' lamp_ubuntu2004/vars/default.yml
 sed -i 's/your_domain/localhost/g' lamp_ubuntu2004/vars/default.yml
 ```
 Then run the playbook :

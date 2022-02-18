@@ -9,5 +9,5 @@ INSTANCE_NAME=$1
 multipass copy-files $INSTANCE_NAME:/home/ubuntu/.ssh/authorized_keys .
 cat ~/.ssh/id_rsa.pub >> authorized_keys
 multipass copy-files authorized_keys $INSTANCE_NAME:/home/ubuntu/.ssh/authorized_keys
-echo "Result :"
+echo "authorized_keys in the vm '$INSTANCE_NAME' are now :"
 multipass exec $INSTANCE_NAME -- cat /home/ubuntu/.ssh/authorized_keys

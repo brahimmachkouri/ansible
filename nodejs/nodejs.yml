@@ -1,5 +1,6 @@
 ---
-  - hosts: dev
+  - name: ilovenode
+    hosts: dev
     become: yes
     gather_facts: no
 

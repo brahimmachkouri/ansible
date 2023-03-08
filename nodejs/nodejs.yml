@@ -11,12 +11,12 @@
 
       - name: Download node installer
         get_url:
-          url=https://deb.nodesource.com/setup_18.x
-          dest=/tmp/setup_18.x
+          url=https://deb.nodesource.com/setup_19.x
+          dest=/tmp/setup_19.x
           mode=0440
 
       - name: Install node
-        command: /bin/bash /tmp/setup_18.x
+        command: /bin/bash /tmp/setup_19.x
    
       - name: Install required packages
         apt: 

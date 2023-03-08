@@ -1,6 +1,6 @@
 ---
-mysql_root_password: "mysql_root_password"
-app_user: "user"
+mysql_root_password: "mysuperpassword"
+app_user: "www-data"
 http_host: "localhost"
 http_conf: "localhost.conf"
 http_port: "80"
